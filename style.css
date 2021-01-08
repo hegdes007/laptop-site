@@ -164,7 +164,7 @@ footer {
 	position: absolute;
 	bottom: 0%;
 	left: 20%;
-    z-index: -1;
+    	z-index: -1;
 }
 
 .laptop-select {
@@ -345,8 +345,13 @@ footer {
 }
 
 @media screen and (max-width: 1021px) {
+
+    body,html {
+        overflow-x: hidden;
+        }
 	.presentation {
-		flex-direction: column;
+        flex-direction: column;
+        
 	}
 	.introduction {
 		margin-top: 5vh;
@@ -371,15 +376,17 @@ footer {
 	.medium-circle,
 	.big-circle {
 		opacity: 0.3;
+    	}
+ 	.burger{
+    		display: block;
+    		cursor: pointer;
+    		position: absolute;
+    		top: 25px;
+    		right: 10px;
+    	}
+    .small-circle {
+        display: none;
     }
- .burger{
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 25px;
-    right: 10px;
-    }
-    
     .logo-img{
         display: none;
     }
@@ -407,6 +414,11 @@ footer {
         opacity: 0;
     }
     ul {
+        display: none;
+        transform: translateX(100%);
+       
+    }
+    .nav-activate {
         position: absolute;
         right: 0px;
         height: 12em;
@@ -417,10 +429,7 @@ footer {
         align-items: center;
         width: 15em;
         z-index: 999;
-        transform: translateX(100%);
         transition: tramsform 0.5s ease-out;
-    }
-    .nav-activate {
         transform: translateX(0%);
       }
       
@@ -508,6 +517,9 @@ footer {
     background-color: #717171;
   }
   @media screen and (max-width:1188px) {
+    body,html {
+        overflow-x: hidden;
+        }
       .slideshow-container {
           max-width: 450px ;
       }
@@ -518,8 +530,14 @@ footer {
     .faq {
         margin-left: 0px;
     }
+    .small-circle {
+        display: none;
+    }
   }
   @media screen and (max-width:1024px) {
+    body,html {
+        overflow-x: hidden;
+        }
     .slideshow-container {
         max-width: 400px ;
     }
@@ -530,11 +548,17 @@ footer {
     .specs-table {
         margin-left: 14%;
     }
+    .small-circle {
+        display: none;
+    }
     .faq {
         margin-left: 0px;
     }
 }
 @media screen and (max-width:1023px) {
+    body,html {
+        overflow-x: hidden;
+        }
     .slideshow-container {
         max-width: 400px ;
     }
@@ -545,8 +569,14 @@ footer {
     .specs-table {
         margin-left: 10%;
     }
+    .small-circle {
+        display: none;
+    }
 }
 @media screen and (max-width:768px) {
+    body,html {
+        overflow-x: hidden;
+        }
     .specs-table {
         margin-left: 0%;
     }
@@ -556,5 +586,8 @@ footer {
     .cart-img img {
         height: 60%;
         width: 80%;
+    }
+    .small-circle {
+        display: none;
     }
 }
